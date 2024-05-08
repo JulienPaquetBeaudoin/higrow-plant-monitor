@@ -42,8 +42,8 @@ void setup() {
 void loop() {
 
   String sensorData = getSensorDataAsJson();
-  
-  httpsPost("/pilea/1", sensorData);
+  Serial.println(sensorData);
+  //httpsPost("/pilea/1", sensorData);
 
   blinkBlue(2000, 2000);
 
