@@ -12,6 +12,7 @@ void connectWifi() {
   while (WiFi.status() != WL_CONNECTED)
   {
     // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
+    Serial.print(WiFi.status());
     blinkBlue(250, 250); // replaces delay(500) --> 500ms
     Serial.print(".");
   }

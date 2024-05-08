@@ -4,8 +4,8 @@
 WiFiClientSecure client;
 
 void httpsPost(String path, String jsonPayload) {
-    client.setCACert(rootCACertificate);
-    // client.setInsecure();
+    //client.setCACert(rootCACertificate);
+    client.setInsecure();
     
 
     Serial.println("\nStarting connection to server...");

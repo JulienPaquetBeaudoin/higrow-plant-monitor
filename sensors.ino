@@ -13,12 +13,12 @@ String getSensorDataAsJson() {
 
   const int capacity = 128; // calculated with https://arduinojson.org/v6/assistant
   StaticJsonDocument<capacity> doc;
-  doc["lotNumber"] = 5;
+  doc["LotNumber"] = 5;
   //doc["timestamp"] = getCurrentTimeAsIsoString();
   //doc["humidityInPercent"] = humidity;
-  doc["temperatureInCelsius"] = tempC;
+  doc["Temperature"] = tempC;
   //doc["perceivedTemperatureInCelsius"] = humanPerceivedTempC;
-  doc["soilMoistureInPercent"] = soilMoisture;
+  doc["Humidity"] = soilMoisture;
   
   String jsonString = "";  // the JSON document is appended to the String, it doesn’t replace it
   serializeJson(doc, jsonString);
