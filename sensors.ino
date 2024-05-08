@@ -13,7 +13,7 @@ String getSensorDataAsJson() {
 
   const int capacity = 128; // calculated with https://arduinojson.org/v6/assistant
   StaticJsonDocument<capacity> doc;
-  doc["LotNumber"] = 5;
+  doc["LotNumber"] = 7;
   //doc["timestamp"] = getCurrentTimeAsIsoString();
   //doc["humidityInPercent"] = humidity;
   doc["Temperature"] = tempC;

@@ -43,7 +43,7 @@ void loop() {
 
   String sensorData = getSensorDataAsJson();
   Serial.println(sensorData);
-  httpsPost("/api/inscription", sensorData);
+  httpsPost("/api/lots/update", sensorData);
   
 
   blinkBlue(2000, 2000);
